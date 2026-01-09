@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <header> 
+        <h1>Galeria de Fotos</h1>
+        
+    </header>
+
+        <div class="input-group">
+            <button class="input-icon" id="botao-busca">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <input 
+                id="busca" 
+                type="text" 
+                class="input-field" 
+                placeholder="Pesquisar">
+        </div>
+
+    </div>
+
+    <div class= "galeria-modal">
+        <span onclick="fecharGaleria()">X</span>
+        <img src="" alt="" onclick="event.stopPropagation()">
+    </div>
+    
+            <section>
+                <div class="galeria">
+                    <div class="single-galeria w-2 h-2">
+                        <img src="https://images.unsplash.com/photo-1767700358934-3466f476d948?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1767700358934-3466f476d948?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Metrópole à noite</p>
+                    </div>
+
+                    <div class="single-galeria w-2 ">
+                        <img src="https://images.unsplash.com/photo-1761839259112-aaea03db3633?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1761839259112-aaea03db3633?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Família na fazenda</p>
+                    </div>
+
+                    <div class="single-galeria">
+                        <img src="https://images.unsplash.com/photo-1767737479514-9767730b8f54?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1767737479514-9767730b8f54?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Festa do Pijama</p>
+                    </div>
+
+                    <div class="single-galeria h-2">
+                        <img src="https://images.unsplash.com/photo-1766849008917-51df97cc8f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1766849008917-51df97cc8f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Paisagem</p>
+                    </div>
+
+                    <div class="single-galeria">
+                        <img src="https://images.unsplash.com/photo-1767199289295-30e08f769c4e?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1767199289295-30e08f769c4e?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Um canal estreito com barcos entre predios antigos</p>
+                    </div>
+
+                    <div class="single-galeria w-2">
+                        <img src="https://images.unsplash.com/photo-1766303046126-96e6dcf50929?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1766303046126-96e6dcf50929?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Portas abertas</p>
+                    </div>
+
+                    <div class="single-galeria w-2 h-2">
+                        <img src="https://images.unsplash.com/photo-1763598944959-62692173594c?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1763598944959-62692173594c?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Show de rap</p>
+                    </div>
+
+                    <div class="single-galeria w-2 ">
+                        <img src="https://images.unsplash.com/photo-1728733344522-d84180047139?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1728733344522-d84180047139?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Gato no jardim</p>
+                    </div>
+
+                    <div class="single-galeria">
+                        <img src="https://plus.unsplash.com/premium_photo-1767764399969-ac64594dcffd?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://plus.unsplash.com/premium_photo-1767764399969-ac64594dcffd?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Passáros em preto e branco</p>
+                    </div>
+
+                    <div class="single-galeria h-2">
+                        <img src="https://images.unsplash.com/photo-1766898211729-5e5a851a38d0?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1766898211729-5e5a851a38d0?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Rua movimentada com placas brilhantes a noite</p>
+                    </div>
+
+                    <div class="single-galeria">
+                        <img src="https://plus.unsplash.com/premium_photo-1765918653838-b00d153e4603?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://plus.unsplash.com/premium_photo-1765918653838-b00d153e4603?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>A cidade e o mar</p>
+                    </div>
+
+                    <div class="single-galeria w-2">
+                        <img src="https://images.unsplash.com/photo-1766246150928-80b214cb2402?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="" onclick="abrirGaleria('https://images.unsplash.com/photo-1766246150928-80b214cb2402?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <p>Ar livre</p>
+                    </div>
+
+
+            </section>
+        
+            <p 
+                id="nenhuma-foto" 
+                style="display: none; 
+                text-align: center; 
+                color: #c7d7f7;">
+                Nenhuma foto encontrada
+            </p>
+
+        
+        <script src = "app.js"></script>
+  </body>
+
+  
+<footer>
+  © 2026 Galeria de Fotos. Todos os direitos reservados.
+</footer>
+
+</html>
