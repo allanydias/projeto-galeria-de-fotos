@@ -169,6 +169,12 @@ h1 {
     color: #ff4d4d;
 }
 
+footer {
+   padding: 30px; 
+   align-items: center;
+   justify-content: center;
+}
+
 
 @media (min-width: 768px) {
     body {
@@ -190,6 +196,7 @@ h1 {
         max-width: 900px;
     }
 }
+
 
 @media (min-width: 1024px) {
     .galeria, .container-galeria {
