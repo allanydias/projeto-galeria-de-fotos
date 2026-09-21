@@ -24,6 +24,133 @@ h1 {
     text-align: center;
 }
 
+/* ===== CÂMERA ===== */
+
+.camera-area {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 32px;
+    width: 100%;
+}
+
+#btnCamera {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #121212;
+    background: linear-gradient(135deg, #6ec6ff, #4a90e2);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(74, 144, 226, 0.4);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#btnCamera:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.55);
+}
+
+#btnCamera:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.4);
+}
+
+#btnCamera i {
+    font-size: 1.3rem;
+}
+
+/* Modal da câmera ao vivo */
+.camera-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.camera-modal.ativo {
+    display: flex;
+}
+
+.camera-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    background: #000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+}
+
+#canvas {
+    display: none;
+}
+
+.camera-controls {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.camera-controls button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.camera-controls button:hover {
+    transform: scale(1.1);
+}
+
+.camera-controls button:active {
+    transform: scale(0.95);
+}
+
+#btnCapturar {
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
+}
+
+#btnCapturar:hover {
+    box-shadow: 0 6px 18px rgba(74, 144, 226, 0.6);
+}
+
+#btnFecharCamera {
+    background: linear-gradient(135deg, #e24a4a, #c23030);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(226, 74, 74, 0.4);
+}
+
+#btnFecharCamera:hover {
+    box-shadow: 0 6px 18px rgba(226, 74, 74, 0.6);
+}
+
+/* ===== FIM CÂMERA ===== */
+
 /* Barra de Busca */
 .input-group {
     width: 100%;
